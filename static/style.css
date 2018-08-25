@@ -1,0 +1,13 @@
+body{
+  background-image: url('E:\Github_projects\Web_Scraping\background_img.jpg');
+  background-color: white;
+}
+h1{
+  font-size:20;
+  font-style: italic;
+  text-align: center;
+  margin-top: 20;
+}
+font.uk {
+  color:blue;
+}
