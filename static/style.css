@@ -1,13 +1,67 @@
 body{
-  background-image: url('E:\Github_projects\Web_Scraping\background_img.jpg');
+  background-image: url('E:/Github_projects/Web_Scrap/background_img.jpg');
   background-color: white;
 }
 h1{
-  font-size:20;
+  font-size:50;
   font-style: italic;
   text-align: center;
-  margin-top: 20;
+  margin-top: 210;
+  text-shadow: 12px 12px 5px black;
+}
+h1:hover {
+  font-size:50;
+  font-style: ;
+  text-align: center;
+  margin-top: 210;
+    text-shadow: 12px 12px 5px black;
+}
+h2.bob{
+  font-size:50;
+  font-style: italic;
+  margin-left: 30px  0;
+
+}
+h2.bob hover {
+  font-size:50;
+    margin-left: 30px  0;
+  font-style:italic ;
+  text-align: left;
+  margin-left:20px 0;
+
 }
 font.uk {
-  color:blue;
+  color:white;
+
+
+}
+font.uk:hover {
+  color:#FF338C;
+
+
+}
+
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #333;
+}
+
+li {
+    float: left;
+}
+
+li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+li a:hover {
+    background-color: #111;
 }
