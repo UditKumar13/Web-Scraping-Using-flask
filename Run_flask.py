@@ -2,9 +2,9 @@ from flask import Flask ,request,render_template
 
 app=Flask(__name__)
 
-@app.route("/tuna / <value>")
-def tuna(value):
-    return render_template("main.html" , name = name)
+@app.route('/thor ',methods=['GET','POST'])
+def thor():
+    return render_template("main.html" )
 
 @app.route("/good")
 def good():
