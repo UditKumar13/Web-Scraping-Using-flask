@@ -1,6 +1,7 @@
 import numpy as np
 import matplotlib.pyplot as plt
 import pandas as pd
+import math
 import requests
 ##to fetch the webpage
 
@@ -18,7 +19,7 @@ URLS=[]
 RATINGS=[]
 DIRECTORS=[]
 ACTORS=[]
-table_inf=soup.find_all('tbody',{'class':'lister-list'})
+table_inf=soup.find_all('tbody',{'class':'lister-list'}).find_Children()
 doc=table_inf[0]
 rows=doc.find_all('tr')
 title_column=test_row.find('td',{'class':'titleColumn'})
@@ -52,10 +53,10 @@ for row in rows:
     URLS.append(movie_url)
     RATINGS.append(rating)
 
-    ACTORS.append(actors)
-    DIRECTORS.append(director)
+    ACTORS.append(director)
+    DIRECTORS.append(actors)
 
-print (count)
+print (count+1)
 
 uk_df=pd.DataFrame({'Title': TITLES, 'Rating': RATINGS, 'Year': YEARS, 'URL': URLS, 'Director': DIRECTORS, 'Actors': ACTORS},
                      columns=['Title', 'Year', 'Rating', 'Director', 'Actors', 'URL'])
